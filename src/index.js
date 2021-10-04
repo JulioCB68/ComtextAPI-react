@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
+import { FrutaProvider } from "./context/index";
 
-import { AuthProvider } from "./context/index";
 
 ReactDOM.render(
   <React.StrictMode>
-    <AuthProvider>
+    <FrutaProvider>
       <App />
-    </AuthProvider>
+    </FrutaProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
